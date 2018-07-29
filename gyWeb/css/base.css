@@ -1,0 +1,349 @@
+/* CSS Document */
+/*全局样式开始*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, dd, dl, dt, li, ol, ul,input,select,button,textarea { padding:0px; margin:0px;}
+input,button,select,textarea{outline:none;}/*去掉chrome下聚焦时的黄色边框*/
+html, body {height:100%;}
+input{ font-family:"SimSun";}
+body {font-size:12px; font-family:"Arial","Microsoft YaHei","SimSun"; color:#333; background:url(../images/bg.jpg) no-repeat center top #fff;}
+a,img {	border:none; vertical-align:top;}
+a {	text-decoration:none; padding:0px; margin:0; cursor:pointer; cursor:hand;}
+ul, ul li, ol li, li {	list-style:none;}
+botton {padding:0px; margin:0px; font-size:12px; cursor:pointer;}
+.clearfix:after {content:"."; display:block; height:0; overflow:hidden;	clear:both;}
+.fl {	float:left;}
+.fr {	float:right;}
+a:focus, button:focus {	outline:none;	-moz-outline:none;}
+.none{	display:none;}
+
+.divT{ width:1210px; height:260px; margin:0 auto;}
+.tLin{ margin-top:80px; margin-right:10px;}.tLin a{ display:inline-block; padding-left:23px; font:normal 16px/18px "SimSun"; color:#055e91;}
+.tLin span{ color:#055e91; margin:0 20px; font-size:16px;}
+.tl01{ background:url(../images/icon1.png) no-repeat left center;}
+.tl02{ background:url(../images/icon2.png) no-repeat left center;}
+
+.divM{ width:1210px; height:auto; margin:0 auto;}
+.titD{ width:100%; height:40px; background:#feeada; margin-top:20px;}
+.titD p{ padding:0 20px; background:#27b0ff; font:bold 18px/40px "Microsoft YaHei","SimSun"; color:#fff; border-right:1px solid #fff;}
+.titD p img{ margin-top:10px; margin-right:10px;}
+.titD a{ display:block; margin-right:20px; background:url(../images/more.png) no-repeat right center; font:normal 12px/40px "SimSun"; color:#27b0ff; padding-right:12px;}
+.titD a:hover{ color:#95150e; background:url(../images/moreH.png) no-repeat right center;}
+
+.seleD{ width:100%; height:25px; padding:10px 0; background:#fffbf8;}
+.seleD span{ color:#4f4f4f; display:inline-block; line-height:27px; margin-left:15px; margin-right:10px; vertical-align:top;}
+.Wdate{ margin-right:15px; vertical-align:top;}
+.statD{ width:135px; height:25px; border:1px solid #d9dde1; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; color:#a0a0a0;}
+.searD{ width:208px; height:23px; border:1px solid #d9f2f5; margin-right:15px;}
+.searIn{ width:154px; padding-left:5px; height:23px; line-height:23px; color:#c5c5c5; border:none;}
+.searD a{ display:inline-block; width:49px; height:23px; line-height:23px; text-align:center; color:#fff; background:#f78618;}
+.searD a:hover{ background:#f57900;}
+
+.tableTeam{ width:100%; height:auto; border-collapse:collapse;}
+.tableTeam tr td,.tableTeam tr th{ border:1px solid #fff; width:109px; height:40px; text-align:center;}
+.tableTeam tr td div,.tableTeam tr th div{ width:100%; height:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.tableTeam tr th{ background:#27b0ff; color:#fff; font:normal 16px/40px "Microsoft YaHei","SimSun";}
+.tableTeam tr td{ color:#4f4f4f; font:normal 12px/40px "SimSun";}
+.tr01 td{ background:#feeada;}
+.tr02 td{ background:#f8f8f8;}
+.tr01:hover td,.tr02:hover td{ background:#ffb974;}
+
+.oneC{ width:594px; height:auto;}
+.oneClist{ width:592px; height:auto; border:1px solid #f1f1f1;}
+.liOne{ padding:0 18px; height:30px; line-height:30px;}
+.liOne span{line-height:30px;}
+.cltit{ color:#4f4f4f; display:inline-block;  background:url(../images/d1.png) no-repeat left center; padding-left:7px; width:80%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.cldate{ color:#979797;}
+.liOne a:hover .cltit{ color:#f78618; background:url(../images/d2.png) no-repeat left center;}.liOne a:hover .cldate{ color:#f78618;}
+
+.divF{ width:100%; border-top:1px solid #e4e6e8; text-align:center; line-height:30px; padding:20px 0; background:#ebebeb;}
+
+
+.divPosi{ width:1210px; height:50px; border-bottom:1px solid #e9e9e9; margin:0 auto; line-height:50px;}
+.posiS{ display:inline-block; background:url(../images/posi.png) no-repeat 5px center; padding-left:27px; color:#4f4f4f;}
+.divPosi a{ line-height:50px; padding:0 5px; display:inline-block; color:#4f4f4f;}
+
+.Mlist .liOne{ height:35px; border-bottom:1px dashed #e9e9e9; padding-left:10px;}
+.Mlist .liOne span{ line-height:35px;}
+.Mlist .liOne:hover{ background:#fafafa;}
+
+.pbPager{ margin:30px 0; width:100%; height:40px; overflow:hidden; font:normal 14px/38px "Microsoft YaHei","SimSun"; color:#333; text-align:center;}
+.pbPager a,.pbPager span,.pbPager input,.pbPager b{ font-weight:normal; vertical-align:top; line-height:38px; display:inline-block;}
+.pbPager a,.pbPager span{ display:inline-block; border:1px solid #d8d8d8; border-right:none; padding:0 20px; height:38px; color:#333; background:#f2f2f2;}
+.pbPager input{ display:inline-block; width:38px; height:36px; border:1px solid #d8d8d8; text-align:center; background:#fff; margin:0 5px;}
+.pbPager a:hover{ background:#fff; color:#27b0ff;}.pbPager a.curr{background:#fff; color:#27b0ff;}
+
+.descM{ padding:10px;}
+.dTit{ width:100%; border-bottom:1px dashed #d9d9d9; text-align:center; color:#f78618; font:bold 16px/20px "Microsoft YaHei","SimSun"; padding:22px 0;}
+.dsumm{ color:#4f4f4f; width:100%; text-align:center; padding:18px 0;}
+.dsumm span{ margin:0 5px;}
+.content{ font:normal 12px/30px "SimSun"; color:#4f4f4f; white-space:pre-wrap;}
+
+.navMenu{ width:100%; height:46px;}
+.navMenu a{ display:block; float:left; width:179px; height:100%; border-left:1px solid #039df5; text-align:center; color:#fff; font:bold 20px/46px "Microsoft YaHei","SimSun";}
+.navMenu a.active,.navMenu a:hover{ color:#055e91;}
+.notice{ display:inline-block; background:url(../images/notice.png) no-repeat left center; padding-left:20px;}
+
+
+/****************
+      登录
+****************/
+.l_body{
+	background:none;
+	
+	}
+	
+/*图片*/
+.l_img_bg{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	min-width:1150px;
+	height:1000px;
+}
+.l_img li{
+	width:100%;
+	height:1000px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:-9998;
+	}
+.l_img li img{
+	width:100%;
+	height:100%;
+	}
+.l_img li.selected{
+	z-index:-9996;
+	}
+.l_dot{
+	position:absolute;
+	bottom:103px;
+	left:50%;
+	z-index:9999;
+}
+.l_dot li{
+	float:left;
+	width:12px;
+	height:12px;
+	background:url(../images/dot.png) top right;
+	margin:0px 7px;
+}
+.l_dot li:hover{
+	cursor:pointer;
+	}
+.l_dot li.selected{
+	background:url(../images/dot.png) top left;
+}
+/*顶部*/
+.l_header_bg{
+	width:100%;
+	height:95px;
+	border-bottom:4px solid #5073b0;
+	background:#f3f3f3;
+}
+.l_header{
+	width:1150px;
+	margin:0px auto;
+	padding-top:20px;
+	}
+/*中间*/
+.l_section_bg{
+	width:1150px;
+	height:392px;
+	background:url(../images/user_login.png) no-repeat;
+	margin:180px auto 0px auto;
+	padding-top:120px;
+	}
+.l_section{
+	width:485px;
+	margin:0px auto;
+	}
+.l_section .p{
+	margin-top:25px;
+	position:relative;
+}
+.l_section .find_pwd{
+	color:#fff;
+	display:inline-block;
+	margin:18px 0px 0px 5px;
+	}
+.l_section label{
+	text-align:right;
+	color:#fff;
+	width:100px;
+	display:inline-block;
+	font-size:20px;
+	}
+.l_section input{
+	height:16px;
+	width:280px;
+	background:url(../images/input_bg.png);
+	border:1px solid #fff;
+	border-radius:5px;
+	margin-left:10px;
+	padding:10px 10px;
+	color:#fff;
+}
+.l_section .code_img{
+	position:absolute;
+	left:280px;
+	top:3px;
+	}
+.l_section .bnt{
+	width:140px;
+	height:46px;
+	background:url(../images/login_bnt.png);
+	float:left;
+	margin-top:30px;
+	margin-right:20px;
+	line-height:46px;
+	color:#fff;
+	text-align:center;
+	font-size:18px;
+	}
+.l_section .login{
+	margin-left:110px;
+	}
+.l_section .reg{
+	background-position:right top;
+	}
+/*底部*/
+.l_footer{
+	background:#122f56;
+	height:50px;
+	line-height:50px;
+	color:#326fb7;
+	text-align:center;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	}
+/****************
+      找回密码2
+****************/
+.b_section_bg{
+	background:url(../images/back_pwd_bg.png);
+	
+	}
+.b_section{
+	width:800px;
+	margin:0px auto;
+	}
+.b_section .email{
+	margin:55px 0px 0px 207px;
+	color:#fff;
+	font-size:16px;
+	padding-left:20px;
+	background:url(../images/true.png) left 5px no-repeat;
+	}
+.b_section .email .color{
+	color:#ffeb0f;
+	font-size:12px;
+	}
+.b_section .bnt{
+	width:116px;
+	height:36px;
+	background:url(../images/b_bnt.png);
+	line-height:36px;
+	color:#fff;
+	text-align:center;
+	font-size:14px;
+	float:left;
+	margin-right:10px;
+	margin-top:30px;
+	
+	}
+.b_section .bnt2{
+	background-position:right top;
+	width:103px;
+	color:#414141;
+	font-size:12px;
+	}
+.b_section .bnt1{
+	margin-left:260px;
+	}
+/****************
+      找回密码3
+****************/
+.b_section input::-webkit-input-placeholder { color:#fff; }
+.b_section input:-moz-placeholder { color:#fff; }
+.b_section .p{
+	margin-top:25px;
+	position:relative;
+}
+.b_section .false{
+	color:#fff;
+	display:inline-block;
+	margin:18px 0px 0px 5px;
+	padding-left:20px;
+	background:url(../images/false.png) left 1px no-repeat;
+	}
+.b_section label{
+	text-align:right;
+	color:#fff;
+	width:200px;
+	display:inline-block;
+	font-size:20px;
+	}
+.b_section input{
+	height:16px;
+	width:280px;
+	background:url(../images/input_bg.png);
+	border:1px solid #fff;
+	border-radius:5px;
+	margin-left:10px;
+	padding:10px 10px;
+	color:#fff;
+}
+.b_section .code_img{
+	position:absolute;
+	left:370px;
+	top:9px;
+	}
+.b_section .bnt3{
+	color:#fff;
+	height:40px;
+	width:224px;
+	text-align:center;
+	font-size:18px;
+	line-height:40px;
+	background:url(../images/b_bnt2.png);
+	margin:35px 0px 0px 210px;
+	}
+/****************
+      找回密码4
+****************/
+.b_section .success{
+	margin:55px 0px 0px 244px;
+	color:#ffeb0f;
+	font-size:24px;
+	padding-left:30px;
+	background:url(../images/true2.png) left 2px no-repeat;
+	}
+.b_section .line{
+	width:100%;
+	border-bottom:1px solid #6c717f;
+	margin:30px 0px;
+	}
+.b_section .suc_text{
+	margin-left:185px;
+	color:#fff;
+	font-size:16px;
+	float:left;
+	}
+.b_section .suc_text .color{
+	color:#ffeb0f;
+	}
+.b_section .suc_bnt{
+	width:71px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	color:#fff;
+	background:url(../images/b_bnt3.png);
+	float:left;
+	margin-left:10px;
+	font-size:12px;
+	}
+
+

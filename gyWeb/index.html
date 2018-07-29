@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>广元市旅游营销优惠政策申报平台</title>
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="DatePicker/WdatePicker.js"></script>
+<script>
+function SJinput(curr){//搜索框的失焦聚焦事件
+	var textVal = $("."+curr).val();//记录文本框内容
+	$("."+curr).focus(function(e) {
+		$(this).val("");
+    });
+	$("."+curr).blur(function(e) {
+		textVal = $("."+curr).val();//记录文本框内容
+		if(textVal == "请输入关键字查询" || textVal == ""){
+			$(this).val("请输入关键字查询");
+			} else{
+				$(this).val(textVal);
+				}
+    });
+}
+$(document).ready(function(e) {
+    SJinput('searIn');
+});
+</script>
+</head>
+
+<body>
+<div class="divT">
+	<img src="images/logo.png" style="margin-top:70px; float:left;"/>
+    <p class="tLin fr"><a class="tl01" href="login.html">立即登录</a><span>|</span><a class="tl02">我要申报</a></p>
+</div>
+<div style="width:100%; height:46px; background:url(images/navbg.jpg) repeat-x left top;">
+	<div class="divM">
+    	<div class="navMenu"><a class="active" href="./index.html">申报首页</a><a href="./teams.html">团队运行</a><a href="./list.html">营销政策指南</a><a href="#" style="border-right:1px solid #039df5;">优秀表彰公告</a></div>
+    </div>
+</div>
+
+<div style="width:100%; height:36px; background:#f8f8f8; color:#4f4f4f; font:normal 12px/36px 'SimSun';">
+	<div class="divM">
+    	<span class="notice">欢迎您访问广元市旅游营销优惠申报平台 今天是2015年02月27日 星期五 10:09:26</span>
+    </div>
+</div>
+
+<div class="divM">
+	<div class="titD">
+    	<p class="fl"><img src="images/icon3.png"/>团队运行</p><a href="#" class="fr">更多</a>
+    </div>
+    <div class="seleD">
+    	<span>开始时间</span><input type="text" class="Wdate" id="d1" onClick="WdatePicker()"/>
+        <span>结束时间</span><input type="text" class="Wdate" id="d2" onClick="WdatePicker()"/>
+        <span>运行状态</span><select class="statD">
+        	<option>等待运行</option>
+        </select>
+        <div class="searD fr">
+        	<input type="text" class="searIn" value="请输入关键字查询"/><a href="#">搜索</a>
+        </div>
+    </div>
+    <table border="0" cellpadding="0" cellspacing="0" class="tableTeam">
+    	<tr>
+        	<th><div>旅行社名称</div></th>
+            <th><div>团队类型</div></th>
+            <th><div>旅游类型</div></th>
+            <th><div>团队编号</div></th>
+            <th><div>客源地</div></th>
+            <th><div>浏览线路</div></th>
+            <th><div>住入酒店</div></th>
+            <th><div>抵达时间</div></th>
+            <th><div>离开时间</div></th>
+            <th><div>人数</div></th>
+            <th><div>运行状态</div></th>
+        </tr>
+        <tr class="tr01">
+        	<td><div>风情之旅旅行社</div></td>
+            <td><div>国内游</div></td>
+            <td><div>团队旅游</div></td>
+            <td><div>GB-2312</div></td>
+            <td><div>四川-成都</div></td>
+            <td><div>成都—上海</div></td>
+            <td><div>城市名人酒店</div></td>
+            <td><div>2015-02-27</div></td>
+            <td><div>2015-03-08</div></td>
+            <td><div>24人</div></td>
+            <td><div>等待运行</div></td>
+        </tr>
+        <tr class="tr02">
+        	<td><div>风情之旅旅行社</div></td>
+            <td><div>国内游</div></td>
+            <td><div>团队旅游</div></td>
+            <td><div>GB-2312</div></td>
+            <td><div>四川-成都</div></td>
+            <td><div>成都—上海</div></td>
+            <td><div>城市名人酒店</div></td>
+            <td><div>2015-02-27</div></td>
+            <td><div>2015-03-08</div></td>
+            <td><div>24人</div></td>
+            <td><div>等待运行</div></td>
+        </tr>
+        <tr class="tr01">
+        	<td><div>风情之旅旅行社</div></td>
+            <td><div>国内游</div></td>
+            <td><div>团队旅游</div></td>
+            <td><div>GB-2312</div></td>
+            <td><div>四川-成都</div></td>
+            <td><div>成都—上海</div></td>
+            <td><div>城市名人酒店</div></td>
+            <td><div>2015-02-27</div></td>
+            <td><div>2015-03-08</div></td>
+            <td><div>24人</div></td>
+            <td><div>等待运行</div></td>
+        </tr>
+        <tr class="tr02">
+        	<td><div>风情之旅旅行社</div></td>
+            <td><div>国内游</div></td>
+            <td><div>团队旅游</div></td>
+            <td><div>GB-2312</div></td>
+            <td><div>四川-成都</div></td>
+            <td><div>成都—上海</div></td>
+            <td><div>城市名人酒店</div></td>
+            <td><div>2015-02-27</div></td>
+            <td><div>2015-03-08</div></td>
+            <td><div>24人</div></td>
+            <td><div>等待运行</div></td>
+        </tr>
+        <tr class="tr01">
+        	<td><div>风情之旅旅行社</div></td>
+            <td><div>国内游</div></td>
+            <td><div>团队旅游</div></td>
+            <td><div>GB-2312</div></td>
+            <td><div>四川-成都</div></td>
+            <td><div>成都—上海</div></td>
+            <td><div>城市名人酒店</div></td>
+            <td><div>2015-02-27</div></td>
+            <td><div>2015-03-08</div></td>
+            <td><div>24人</div></td>
+            <td><div>等待运行</div></td>
+        </tr>
+        <tr class="tr02">
+        	<td><div>风情之旅旅行社</div></td>
+            <td><div>国内游</div></td>
+            <td><div>团队旅游</div></td>
+            <td><div>GB-2312</div></td>
+            <td><div>四川-成都</div></td>
+            <td><div>成都—上海</div></td>
+            <td><div>城市名人酒店</div></td>
+            <td><div>2015-02-27</div></td>
+            <td><div>2015-03-08</div></td>
+            <td><div>24人</div></td>
+            <td><div>等待运行</div></td>
+        </tr>
+        <tr class="tr01">
+        	<td><div>风情之旅旅行社</div></td>
+            <td><div>国内游</div></td>
+            <td><div>团队旅游</div></td>
+            <td><div>GB-2312</div></td>
+            <td><div>四川-成都</div></td>
+            <td><div>成都—上海</div></td>
+            <td><div>城市名人酒店</div></td>
+            <td><div>2015-02-27</div></td>
+            <td><div>2015-03-08</div></td>
+            <td><div>24人</div></td>
+            <td><div>等待运行</div></td>
+        </tr>
+        <tr class="tr02">
+        	<td><div>风情之旅旅行社</div></td>
+            <td><div>国内游</div></td>
+            <td><div>团队旅游</div></td>
+            <td><div>GB-2312</div></td>
+            <td><div>四川-成都</div></td>
+            <td><div>成都—上海</div></td>
+            <td><div>城市名人酒店</div></td>
+            <td><div>2015-02-27</div></td>
+            <td><div>2015-03-08</div></td>
+            <td><div>24人</div></td>
+            <td><div>等待运行</div></td>
+        </tr>
+        <tr class="tr01">
+        	<td><div>风情之旅旅行社</div></td>
+            <td><div>国内游</div></td>
+            <td><div>团队旅游</div></td>
+            <td><div>GB-2312</div></td>
+            <td><div>四川-成都</div></td>
+            <td><div>成都—上海</div></td>
+            <td><div>城市名人酒店</div></td>
+            <td><div>2015-02-27</div></td>
+            <td><div>2015-03-08</div></td>
+            <td><div>24人</div></td>
+            <td><div>等待运行</div></td>
+        </tr>
+        <tr class="tr02">
+        	<td><div>风情之旅旅行社</div></td>
+            <td><div>国内游</div></td>
+            <td><div>团队旅游</div></td>
+            <td><div>GB-2312</div></td>
+            <td><div>四川-成都</div></td>
+            <td><div>成都—上海</div></td>
+            <td><div>城市名人酒店</div></td>
+            <td><div>2015-02-27</div></td>
+            <td><div>2015-03-08</div></td>
+            <td><div>24人</div></td>
+            <td><div>等待运行</div></td>
+        </tr>
+        <tr class="tr01">
+        	<td><div>风情之旅旅行社</div></td>
+            <td><div>国内游</div></td>
+            <td><div>团队旅游</div></td>
+            <td><div>GB-2312</div></td>
+            <td><div>四川-成都</div></td>
+            <td><div>成都—上海</div></td>
+            <td><div>城市名人酒店</div></td>
+            <td><div>2015-02-27</div></td>
+            <td><div>2015-03-08</div></td>
+            <td><div>24人</div></td>
+            <td><div>等待运行</div></td>
+        </tr>
+        <tr class="tr02">
+        	<td><div>风情之旅旅行社</div></td>
+            <td><div>国内游</div></td>
+            <td><div>团队旅游</div></td>
+            <td><div>GB-2312</div></td>
+            <td><div>四川-成都</div></td>
+            <td><div>成都—上海</div></td>
+            <td><div>城市名人酒店</div></td>
+            <td><div>2015-02-27</div></td>
+            <td><div>2015-03-08</div></td>
+            <td><div>24人</div></td>
+            <td><div>等待运行</div></td>
+        </tr>
+    </table>
+    
+    <div class="clearfix">
+    	<div class="oneC fl">
+        	<div class="titD">
+                <p class="fl">营销政策指南</p><a href="#" class="fr">更多</a>
+            </div>
+            <ul class="oneClist">
+            	<li class="liOne"><a><span class="cltit fl">广元旅游营销优惠政策的通知</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">广元旅游营销优惠政策操作办法</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">广元市旅游标准评定委员会关于评定含笑山庄等18家农家乐</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">关于广元市民用机场净空环境保护工作的通告</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">关于公开征集《广元市旅游发展规划》方案的公告</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">广元旅游陇南贺新春图片展启动</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">广元市2015年春节假日第二天旅游情况小结</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">利州区2014年旅游收入实现37.5亿元 同比增长10.7%</span><span class="cldate fr">[2015-02-28]</span></a></li>
+            </ul>
+        </div>
+        <div class="oneC fr">
+        	<div class="titD">
+                <p class="fl">优秀表彰公告</p><a href="#" class="fr">更多</a>
+            </div>
+            <ul class="oneClist">
+            	<li class="liOne"><a><span class="cltit fl">2014年度组团旅行社公告</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">剑门关景区关于悬空玻璃观景平台及往复式索道的开放公告</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">紧急通知：曾家山生态农业观光园冬季滑雪项目暂停接待</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">关于组建市级旅游景区检查评定员专家库的公示</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">苍溪县旅游发展总体规划修编竞争性谈判公告</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">广元市旅游局关于《广元市自驾游体系建设总体策划方案》的征集公告</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">关于组织2014年全国导游人员资格考试的通知</span><span class="cldate fr">[2015-02-28]</span></a></li>
+                <li class="liOne"><a><span class="cltit fl">关于向腾讯网、新浪网、携程网采购广元旅游网络宣传营销服务的公告</span><span class="cldate fr">[2015-02-28]</span></a></li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="divF">
+	版权所有：广元市旅游发展委员会 备案序号:蜀ICP备05029618号 电话0839-3305035:邮箱：gyslyi@scta.gov.cn<br>　
+技术支持：<a href="http://www.daqsoft.com" target="_blank" style="color:#333;">中科大旗软件有限公司</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+.Wdate{
+	border:#d6d6d6 1px solid;
+	height:26px;
+	background:#fff url(date.jpg) no-repeat right;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	padding-left:7px;
+}
+.WdateFmtErr{
+	font-weight:bold;
+	color:red;
+}
